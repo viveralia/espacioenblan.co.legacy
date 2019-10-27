@@ -1,0 +1,42 @@
+.readingProgress
+  background: #1b1b1b
+.complete
+  background: #008fa8
+  background: linear-gradient(to right, #008fa8, #30dede)
+
+  // Share styles
+.share .right p, .share .left p
+  color: #1b1b1b
+  font-weight: 700
+
+// Footer styles fix
+footer .social ul li a
+  font-size: 1.25em
+@media (min-width: 768px)
+  footer .social ul li a
+    font-size: 1.4em
+
+// Card Hot Fix
+.blog .card--container .card--content .post-card .post-img .single-img
+  background-position: center
+
+progress
+  position: fixed
+  top: 0
+  width: 100%
+  height: 5px
+  z-index: 999999
+progress[value]
+  -webkit-appearance: none
+  appearance: none
+  -moz-appearance: none
+  border: none
+  width: 100%
+  background: 0 0
+progress[value]::-webkit-progress-bar
+  background: transparent
+progress[value]::-webkit-progress-value
+  background: #1b1b1b
+progress[value].done::-webkit-progress-value
+  background: #008fa8
+  background: linear-gradient(to right, #008fa8, #30dede)

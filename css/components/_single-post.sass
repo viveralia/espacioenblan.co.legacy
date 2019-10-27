@@ -1,0 +1,302 @@
+@charset "UTF-8"
+
+.single-post
+  .hero-img
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    height: 100%
+    position: relative
+
+.single-post__headline
+  padding-top: 120px
+  h4
+    font-size: .875em
+    color: rgba(0,0,0,.54)
+    margin-bottom: 12px
+    a
+      color: inherit
+      strong
+        color: inherit
+  h1
+    font-size: 1.625em
+    font-weight: 700
+    letter-spacing: -.25px
+    margin-bottom: 24px
+
+.single-post__headline__author
+  img
+    width: 100%
+    height: auto
+    border-radius: 50%
+  .name
+    margin-bottom: 0
+    font-family: 'Crimson Text', serif
+    font-size: .75em
+    text-transform: uppercase
+  .date
+    font-size: .75em
+    font-family: 'Crimson Text', serif
+    text-transform: uppercase
+    color: rgba(0,0,0,.54)
+    letter-spacing: .75px
+    .time
+      text-transform: lowercase
+      font-size: 1.1em
+      font-family: 'Montserrat', sans-serif
+      color: #008fa8
+      font-weight: 700
+      letter-spacing: 0
+
+.single-post__hero
+  padding-left: 0
+  height: 40vh
+  margin-top: 30px
+
+.post-content
+  margin-top: 55px
+  font-family: 'Crimson Text', serif
+  font-size: 1.125em
+  letter-spacing: -.004em
+  color: rgba(0,0,0,.7)
+  line-height: 1.45em
+  a
+    background-image: linear-gradient(180deg,transparent 65%,#30dede 0)
+    background-size: 0 100%
+    background-repeat: no-repeat
+    text-decoration: none
+    color: rgba(0,0,0,.5)
+    border-bottom: 1px solid #1b1b1b
+    -webkit-transition: background-size .4s ease
+    -moz-transition: background-size .4s ease
+    -ms-transition: background-size .4s ease
+    -o-transition: background-size .4s ease
+    transition: background-size .4s ease
+    &:hover, &:active, &:focus
+      background-size: 100% 100%
+      color: rgba(0,0,0,.5) !important
+  p, h1, h2, h3, h4, h5, h6, ol, ul
+    padding-left: 30px
+    padding-right: 30px
+  p
+    margin-top: 1.4em
+    margin-bottom: 0
+  p:first-of-type
+    margin: 0 !important
+  ol, ul
+    padding-left: 50px
+    li
+      strong
+        font-weight: 700
+        text-decoration: none
+  h1, h2, h3, h4, h5, h6
+    font-family: 'Montserrat', sans-serif
+    font-weight: 700
+    color: rgba(0,0,0,.84)
+    margin-top: 3em
+  h1
+    font-size: 1.25em
+    margin-bottom: 0
+  h2
+    font-size: 1.125em
+    margin-bottom: 0
+  h3, h4, h6
+    font-size: 1em
+    margin-bottom: 0
+  h5
+    font-size: .8em
+    span
+      font-weight: 600 !important
+    a
+      font-weight: 400
+      font-size: 1.25em
+      font-family: 'Crimson Text', serif
+  blockquote
+    max-width: 80%
+    margin: auto
+    color: rgba(0,0,0,.84)
+    font-size: 1.25em
+    line-height: 1.125em
+    margin-top: 1.4em
+    padding-left: 1.5%
+    border-left: 3px solid #1b1b1b
+    em
+      display: block
+      margin-top: 10px
+      font-size: 15px
+      line-height: normal
+      color: rgba(0,0,0,.75)
+  p strong
+    font-weight: 700
+    color: #1b1b1b
+    text-decoration: none
+    letter-spacing: inherit
+    line-height: 0
+  hr
+    border: none
+    margin-bottom: 2em
+    margin-top: 2em
+  hr::after
+    content: '● ● ●'
+    color: #c3c3c3
+    font-size: .75em
+    display: block
+    text-align: center
+    letter-spacing: 5px
+    margin: auto
+  .wp-caption
+    max-width: 100%
+    margin: auto
+    margin-top: 1.4em
+    img
+      max-width: 100%
+      height: auto
+    .wp-caption-text
+      text-align: center
+      font-size: 12px
+      font-family: 'Montserrat', sans-serif
+      color: rgba(0,0,0,.54)
+      font-weight: 500
+      margin-top: .5em !important
+      line-height: 1.5em
+
+.post-content::first-letter
+  font-size: 3.5em
+  float: left
+  position: relative
+  display: block
+  line-height: .8em
+  padding-right: .2em
+  margin-bottom: -1px
+
+.author-bio
+  padding-top: 50px
+  padding-left: 15px
+  padding-right: 15px
+  padding-bottom: 50px
+  .written
+    position: relative
+    color: rgba(0,0,0,.54)
+    letter-spacing: .75px
+    font-size: .875em
+    text-transform: uppercase
+    font-family: 'Crimson Text', serif
+  .written::after
+    content: ''
+    background: #c3c3c3
+    width: calc(100% - 120px)
+    position: absolute
+    height: 1px
+    bottom: 5px
+    right: 0
+  .avatar
+    width: 55px
+    height: 55px
+    img
+      max-width: 100%
+      height: auto
+      border-radius: 50%
+  .name
+    font-family: 'Crimson Text', serif
+    margin-top: 25px
+    font-size: 1.125em
+    margin-bottom: 0
+  .role
+    font-size: .75em
+    font-weight: 700
+  .description
+    font-family: 'Crimson Text', serif
+    color: #686868
+    line-height: 1.35em
+
+.related .headline h6
+  font-size: 1.5em
+
+@media (min-width: 768px)
+  .single-post
+    background: #fafafa
+  .single-post__column
+    padding-left: 5%
+  .single-post__headline
+    padding-top: 180px
+    padding-bottom: 180px
+    h4
+      position: relative
+    h4::after
+      content: ''
+      width: 25vw
+      height: 1px
+      position: absolute
+      background: #c3c3c3
+      bottom: 1px
+      left: 220px
+      z-index: 2
+  .single-post__hero
+    padding-left: 15px
+    height: auto
+    margin-top: 0
+  .single-post__headline__author
+    max-width: 270px
+    .name
+      text-transform: none
+      font-size: 1em
+  .post-content
+    font-size: 1.25em
+    hr
+      padding-top: .75em
+      padding-bottom: .75em
+    .wp-caption
+      .wp-caption-text
+        font-size: 14px
+        margin-top: 1em !important
+
+  .author-bio
+    max-width: 800px
+    padding-bottom: 50px
+    margin: auto
+    .avatar
+      width: 100px
+      height: 100px
+      margin: auto
+      margin-top: 15px
+
+  .share .container .right a span
+    font-size: 1em
+
+@media (min-width: 992px)
+  .single-post__headline
+    padding-top: 22.5vh
+    padding-bottom: 22.5vh
+    h4
+      font-size: 1em
+    h4::after
+      left: 250px
+      bottom: 5px
+    h1
+      font-size: 2.25em
+
+  .author-bio
+    .avatar
+      margin-top: 20px
+    .name
+      font-size: 1.25em
+    .role
+      font-size: 1em
+    .description
+      font-size: 1.125em
+
+  .post-content
+    margin-top: 10vh
+    .wp-caption
+      width: 80% !important
+      max-width: 700px
+      margin-left: auto
+      margin-right: auto
+
+@media (min-width: 1920px)
+  .single-post__headline
+    max-width: 500px
+    margin-left: auto
+  .post-content
+    max-width: 1000px
+    font-size: 1.35em
